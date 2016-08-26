@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="main">
+<head>
+    <meta charset="UTF-8">   
+    <title>Atividade Merge Sort - Aluno: Carlos</title>
+  
+</head>
+<body>
+    <script src="angular.js"></script>
+    <script src="app.js"></script>
+    <script src="merge.js"></script>
+
+<div ng-controller="merge">
+<div id="title" style="width: 100%; margin-bottom: 8%">
+  <div style="text-align: center; margin-top: 3%"><h1>Merge Sort</h1></div>
+  <br/>
+
+<label>Aluno: Carlos Eduardo Olivera Filho</label>
+  <br/>
+<label>Análise e Desenvolvimento de Sistemas - Turma: 2014/2</label>
+  <br/>
+  <label>Data: 26/08/2016</label>
+
+  </div>
+   <div style="margin: auto;width: 60%; text-align: center">
+        <h2>{{arrayNumbers}}</h2>
+    <input style="width: 60%;" type="text" ng-model="items" placeholder="Digite os números que serão ordenados." ng-required="true" ng-change="ajustaArray()"/>
+    <h5>SOMENTE NÚMEROS</h5>
+    </div>
+    <div style="width: 100%; text-align: center;">
+    <button ng-click="mergeSort(arrayNumbers)" style="margin: auto; width: 15%" >Merge Sort!</button><br/>
+    <button ng-click="clean()" style="margin-top: 1%; width: 15%" >Nova Ordenação!</button>
+    </div>
+    <div style="width: 100%; text-align: center; background-color: #F2EDB6; display: table;margin-top: 3%" ng-show="resultado">
+  <h3>Resultado do Merge Sort:</h3><br/>
+  <h2>{{resultado}}</h2>
+</div>
+</div>
+
+
+
+  
+	
+  
+</body>
+</html>
+
+
+
+
+
+	
+
+
+
+
